@@ -105,9 +105,6 @@ nav ul li a:hover::after {
 #about {
   width: 100%;
   height: 100vh;
-  /* background-image: url(images/background1.png);
-    background-size:cover;
-    background-position: center; */
 }
 
 .row {
@@ -186,9 +183,6 @@ nav ul li a:hover::after {
   padding: 20px 0;
   width: 100%;
   min-height: 100vh;
-  /* background-image: url(images/background1.png);
-    background-size:cover;
-    background-position: center; */
 }
 
 .domains-list {
@@ -236,26 +230,45 @@ nav ul li a:hover::after {
   padding: 5px 0;
   width: 100%;
   min-height: 100vh;
-  /* background-image: url(images/background1.png);
-    background-size:cover;
-    background-position: center; */
 }
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 60px), 1fr));
+  grid-gap: 30px;
   margin-top: 50px;
+}
+.btn {
+  transition: background 0.5s;
 }
 
 .project {
+  height: 220px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.Projects container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.project {
+  flex: 0 0 calc(30% - 20px);
+  margin-bottom: 20px;
+}
 .project img {
-  width: 100%;
+  margin: auto;
+  padding: 5px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
@@ -317,7 +330,15 @@ nav ul li a:hover::after {
   color: #fff;
   transition: backgroound 0.5s;
 }
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+}
 .btn:hover {
   background: #c5b2ed;
 }
@@ -326,9 +347,6 @@ nav ul li a:hover::after {
 #contact {
   width: 100%;
   min-wheight: 100vh;
-  /* background-image: url(images/background1.png);
-    background-size:cover;
-    background-position: center; */
 }
 .contact-left {
   flex-basis: 35%;
